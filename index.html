@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+#canaiscontent {
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Além da Imaginação (1959)</title>
+</head>
+
+
+	
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logoseries.png">
+</div>
+	
+<div w3-include-html="contentseriesalem.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+
+
+
+
+
+<div id="meiomusicas">
+
+<div id="Antigas">
+<a href='https://vimeo.com/manage/videos/1007348803'><img src="https://i.vimeocdn.com/video/{1007348803}"></br>1X01 - Onde estão Todos</a>
+</div>
+<div id="Antigas2">
+<a href='https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAgvHa8AkH5bn2VBrI-6CNY'><img src="Antigas2.jpg"></br>Antigas 2</a>
+</div>
+<div id="Blues1">
+<a href='https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAZq4jJgmSbd4TzsQ307bRo'><img src="Blues1.jpg"></br>Blues 1</a>
+</div>
+
+</div>
+</body>
+</html>
